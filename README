@@ -1,0 +1,27 @@
+meta-spsdk
+==========
+This layer contains recipes for NXPs SPSDK [1] and its dependencies. We only
+provide the recipes to use SPSDK in Yocto and are not responsible for SPSDK
+itself.
+We plan on upstreaming these recipes to meta-python and meta-freescale.
+
+It is used to sign the boot container for i.MX95 machines supported in
+meta-phytec.
+
+[1] https://github.com/nxp-mcuxpresso/spsdk
+
+Dependencies
+============
+openembedded-core (http://git.openembedded.org/openembedded-core)
+meta-python (https://github.com/openembedded/meta-openembedded)
+
+Patches
+=======
+Please submit any patches against the meta-spsdk layer as a PR on:
+
+https://github.com/phytec/meta-spsdk
+
+Maintainers
+===========
+Leonard Anderweit <l.anderweit@phytec.de>
+Maik Otto <m.otto@phytec.de>

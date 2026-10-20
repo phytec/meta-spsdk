@@ -26,7 +26,8 @@ sign_imx95() {
     for target in ${IMXBOOT_TARGETS}; do
         nxpimage ahab sign -c ${B}/imx95_ahab_sign.yaml \
             -b ${S}/imx-boot${BOOT_VARIANT}-${MACHINE}-${UBOOT_CONFIG}.bin-${target} \
-            -o ${BUILD_SIGN_DIR}/imx-boot${BOOT_VARIANT}-${MACHINE}-${UBOOT_CONFIG}.bin-${target}-signed
+            -o ${BUILD_SIGN_DIR}/imx-boot${BOOT_VARIANT}-${MACHINE}-${UBOOT_CONFIG}.bin-${target}-signed \
+            -fs ${BUILD_SIGN_DIR}/fuse-script
     done
 }
 
